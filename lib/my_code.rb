@@ -31,7 +31,7 @@ def reduce_to_all_true(source_array)
     return false if (source_array[counter] = false)
   counter += 1 
   end
-  return false
+  return true
 end
     
 def reduce_to_any_true(source_array)
@@ -40,5 +40,5 @@ def reduce_to_any_true(source_array)
    return true if (source_array[counter] = true)
    counter += 1 
  end
- return true
+ return false
 end
